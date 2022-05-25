@@ -28,13 +28,14 @@ function getFactorial($n){
 
     if($n <= 1){
         return 1;
-    }else{
+    }else {
         return $n*getFactorial($n-1);
     }
 }
 
 $n = 3; 
 
-$factorial = getFact($n);
+// $factorial = getFact($n);
+$factorial = getFactorial($n);
 echo "the factorial of $n is : ", $factorial; 
 ?>
